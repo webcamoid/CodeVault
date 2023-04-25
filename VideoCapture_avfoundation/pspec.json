@@ -1,0 +1,18 @@
+{
+    "type": "WebcamoidPluginsCollection",
+    "plugins": [
+        {
+            "name": "AVFoundation",
+            "description": "Capture video using AVFoundation",
+            "id": "VideoSource/CameraCapture/Impl/AVFoundation",
+            "implements": ["CameraCaptureImpl"],
+            "depends": [
+                "VideoFilter/AdjustHSL",
+                "VideoFilter/Contrast",
+                "VideoFilter/Gamma"
+            ],
+            "priority": 1000,
+            "type": "qtplugin"
+        }
+    ]
+}
